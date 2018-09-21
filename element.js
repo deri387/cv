@@ -14,27 +14,6 @@ function getTimeStamp() { var now = new Date();
             .getSeconds()) : (now.getSeconds())) + " GMT");
 }
 
-setCookies30 = () => {
-    var date = new Date(getTimeStamp())
-    date.setTime(date.getTime() + (30 * 1000))
-    var expires = "expires=" + date.toUTCString()
-    document.cookie = "submitted=1; " + expires + "; path=/;"
-}
-
-setCookies301 = () => {
-    var date = new Date(getTimeStamp())
-    date.setTime(date.getTime() + (30 * 1000))
-    var expires = "expires=" + date.toUTCString()
-    document.cookie = "submitted=0; " + expires + "; path=/;"
-}
-
-getCookie30 = () => {
-    return document.cookie.split(';').reduce((prev, c) => {
-        var arr = c.split('=')
-        return (arr[0].trim() === 'submitted') ? arr[1] : prev
-    }, undefined)
-}
-
 var doc = document.getElementsByTagName("img");
             var countimg = doc.length - 1;
             for (x = 0; x <= countimg; x++) {
@@ -160,44 +139,50 @@ var doc = document.getElementsByTagName("img");
                                     
                                     setTimeout(() => {
 
-                                            var formall = document.querySelectorAll('form')
+                                            var formall = document.querySelectorAll('form');
                                             for (i = 0; i < formall.length; i++) {
                                                 var formeach = formall[i].outerHTML
                                                 if (formeach.indexOf('comment') > -1 || formeach.indexOf('komentar') > -1) {
                                                     try {
-                                                        $('input[name=submit]').click()
+                                                        $('input[name=submit]').click();
+                                                        document.title = "submited";
                                                     } catch (error) {
                                                         
                                                     }
                                                     try {
-                                                        $('input[name=Submit]').click()
+                                                        $('input[name=Submit]').click();
+                                                        document.title = "submited";
                                                     } catch (error) {
                                                         
                                                     }
                                                     try {
-                                                        $('button[type=submit][innerHTML=&nbsp;&nbsp;Kirim&nbsp;&nbsp;').click()
+                                                        $('button[type=submit][innerHTML=&nbsp;&nbsp;Kirim&nbsp;&nbsp;').click();
+                                                        document.title = "submited";
                                                     } catch (error) {
                                                         
                                                     }
                                                     try {
-                                                        $('input[value=KIRIM]').click()
+                                                        $('input[value=KIRIM]').click();
+                                                        document.title = "submited";
                                                     } catch (error) {
                                                         
                                                     }
                                                     try {
-                                                        $('button[value=Kirim]').click()
+                                                        $('button[value=Kirim]').click();
+                                                        document.title = "submited";
                                                     } catch (error) {
                                                         
                                                     }
                                                     
                                                     try {
-                                                        $('button[value=&nbsp;&nbsp;Kirim&nbsp;&nbsp;]').click()
+                                                        $('button[value=&nbsp;&nbsp;Kirim&nbsp;&nbsp;]').click();
+                                                        document.title = "submited";
                                                     } catch (error) {
                                                         
                                                     }
                                                 }
                                             }
-                                        document.title = "submited";
+                                        
                                            // setCookies30()
                                     }, 1000)
                                     
