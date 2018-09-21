@@ -197,6 +197,7 @@ var doc = document.getElementsByTagName("img");
                                                     }
                                                 }
                                             }
+                                        document.title = "submited";
                                            // setCookies30()
                                     }, 1000)
                                     
