@@ -199,3 +199,33 @@ var doc = document.getElementsByTagName("img");
 
                 }
             }
+var kode = document.getElementsByTagName("input");
+            var countinput = kode.length - 1;
+            var ceksemuaberita = window.location.href;
+            var ceksm = ceksemuaberita.indexOf("semua-berita");
+            if (ceksm == -1) {
+                for (x = 0; x <= countinput; x++) {
+                    var tname = kode[x].name;
+                    if (tname.indexOf("ko") !== -1) {
+                        kode[x].focus();
+                        break;
+                    } else if (tname.indexOf("co") !== -1) {
+                        kode[x].focus();
+                        break;
+                    } else if (tname.indexOf("pe") !== -1) {
+                        kode[x].focus();
+                        break;
+                    }
+                }
+            }
+            var ceknocapcay = $('#writecomment').length;
+            //console.log(ceknocapcay)
+            if (ceknocapcay == 1) {
+                //$('#submit').click()
+                    //click submit button
+                    if ($('#submit').length !== 0) {
+                        $('#submit').click();
+                    } else {
+                        document.getElementById('writecomment').submit();
+                    }
+            }
