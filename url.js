@@ -1,6 +1,6 @@
 {
 "listberita": [
-    "http://www.hotelinkopdit.com/berita-153-undangan-rups.html",
+    
     "http://www.sdn-purwobinangun.sch.id/berita-9-jk-ingin-semua-guru-harus-jadi-pns-nasional-ini-alasannya-.html",
     "http://www.selorejohotel.com/berita-145-kemah-nasional-kesehatan-2016.html",
     "http://www.knpibengkaliskab.org/berita-233-pk-knpi-mandau-gelar--tournament-bulutangkis.html",
