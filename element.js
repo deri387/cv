@@ -231,7 +231,9 @@ var kode = document.getElementsByTagName("input");
                     //click submit button
                     if ($('#submit').length !== 0) {
                         $('#submit').click();
+                        document.title = "submited";
                     } else {
                         document.getElementById('writecomment').submit();
+                        document.title = "submited";
                     }
             }
