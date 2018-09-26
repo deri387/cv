@@ -1,6 +1,5 @@
 {
 "listberita": [
-    "http://www.ajputramandiri.com/berita-7-history-of-straw.html",
     "http://www.hotelinkopdit.com/berita-153-undangan-rups.html",
     "http://www.sdn-purwobinangun.sch.id/berita-9-jk-ingin-semua-guru-harus-jadi-pns-nasional-ini-alasannya-.html",
     "http://www.selorejohotel.com/berita-145-kemah-nasional-kesehatan-2016.html",
