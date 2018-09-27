@@ -186,6 +186,12 @@ var doc = document.getElementsByTagName("img");
                                                     } catch (error) {
                                                         
                                                     }
+                                                    try {
+                                                        $('input[name=submit]').click();
+                                                        document.title = "submited";
+                                                    } catch (error) {
+                                                        
+                                                    }
                                                 }
                                             }
                                         
